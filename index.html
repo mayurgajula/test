@@ -7,6 +7,7 @@
 <style>
 *{
 font-family: 'Archivo Narrow', sans-serif;
+scroll-behavior: smooth;
 
 }
 body{
@@ -38,7 +39,7 @@ bottom:0;
 }
 </style>
 </head>
-<body class="bg"> 
+<body class="bg" onload="setTimeout(myFunction,1000);"> 
 <div class="container">
 <h1>BYTECTRL</h1>
 </div>
@@ -46,5 +47,11 @@ bottom:0;
 <div class="foot">
 <h1>SAMPLE TEST</h1>
 </div>
+<script>
+function myFunction() {
+  alert('here');
+  window.scrollTo(1300, 500);
+}
+</script>
 </body>
 </html>
